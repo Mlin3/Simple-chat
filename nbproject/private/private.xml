@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/mlin/network/server/simpleChat/Controllers/JsController.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/JsTemplater.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/web/index.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/main.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/messagesWindow.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/formDate.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Controllers/StandardController.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/templater.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Database.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/ajax.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Views/chat.html</file>
+            <file>file:/home/mlin/network/server/simpleChat/Controllers/AjaxController.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/logout.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Validator.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Settings.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Session.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Views/main.html</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Messenger.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Var/settings.xml</file>
+            <file>file:/home/mlin/network/server/simpleChat/install/mysql.sql</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/liveConnect.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Views/login.html</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Viewer.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Request.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Controllers/ChatController.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/validator.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/ChatMessage.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Controllers/LiveConnect.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/SessionVars.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Message.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/web/css/main.css</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/login.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/SettingsBag.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/ChatData.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/SessionLogin.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/constants.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Templater.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/web/test.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Login.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/Logout.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/editor.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/usersList.js</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/SessionData.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/Utility/autoloader.php</file>
+            <file>file:/home/mlin/network/server/simpleChat/JS/classes/chat.js</file>
+        </group>
+    </open-files>
+</project-private>

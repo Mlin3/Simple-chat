@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <database>
+        <host>127.0.0.1</host>
+        <dbname>learning</dbname>
+        <port>3306</port>
+        <charset>uft-8</charset>
+        <user>bot</user>
+        <password>bot</password>
+    </database>
+    <chat>
+        <max_users>30</max_users>
+        <timeout>24</timeout>
+    </chat>
+</settings>
