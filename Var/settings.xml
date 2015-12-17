@@ -2,11 +2,11 @@
 <settings>
     <database>
         <host>127.0.0.1</host>
-        <dbname>learning</dbname>
+        <dbname>default</dbname>
         <port>3306</port>
         <charset>uft-8</charset>
-        <user>bot</user>
-        <password>bot</password>
+        <user>root</user>
+        <password></password>
     </database>
     <chat>
         <max_users>30</max_users>
