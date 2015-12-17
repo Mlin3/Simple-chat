@@ -4,17 +4,28 @@ namespace simpleChat\Utility;
 
 /**
  * Description of SessionPHP
- * This class main purpose is to manage PHP functions related to session.
+ * 
+ * Manage PHP session vars.
  *
  * @author mlin
  */
 class SessionVars
 {
-    static private $isInitialized = 0;
+    /*
+     * @type bool
+     * 
+     * Stores information if PHP session vars was initialized or not.
+     */
+    static private $isInitialized = false;
     
+    
+    /*
+     * If session vars wasn't initialized it happens here. 
+     * 
+     * @return void
+     */
     static public function startSession()
     {
-        
         if( !self::$isInitialized )
         {
             session_start();
@@ -44,21 +55,24 @@ class SessionVars
                 $_SESSION['loginTime'] = \PHP_INT_MAX;
             }
             
-            self::$isInitialized = 1;
+            self::$isInitialized = true;
         }
     }
     
     
     function __construct()
-    {
-        
+    {    
         self::startSession();
     }
     
     
+    /*
+     * Check if user is logged.
+     * 
+     * @return bool
+     */
     public function isLogged()
     {
-        
         if( $_SESSION['login'] !== '')
             return true;
         else
@@ -66,6 +80,14 @@ class SessionVars
         
     }
     
+    
+    /*
+     * Set session vars during login
+     * 
+     * @param string $login
+     * 
+     * @return void
+     */
     public function setSession( $login )
     {
         $_SESSION['login'] = $login;
@@ -79,29 +101,59 @@ class SessionVars
         $this->setLoginTime();
     }
     
+    
+    /*
+     * Destroy session vars during logout
+     * 
+     * @return void
+     */
     public function destroySession()
     {
         $_SESSION['login'] = '';
         $_SESSION['id'] = '';
-        $_SESSION['time'] = 0.0;
+        $_SESSION['time'] = 0;
         $_SESSION['lastMessageID'] = -1;
     }
     
+    
+    /*
+     * Get user nickname
+     * 
+     * @return string
+     */
     public function getLogin()
     {
         return $_SESSION['login'];
     }
     
+    
+    /*
+     * Get id of current session
+     * 
+     * @return string
+     */
     public function getSessionID()
     {
         return $_SESSION['id'];
     }
     
+    
+    /*
+     * Get time of last database update
+     * 
+     * @return int
+     */
     public function getSessionTime()
     {
         return $_SESSION['time'];
     }
     
+    
+    /*
+     * Get new time
+     * 
+     * @return int
+     */
     public function updateSessionTime()
     {
         $_SESSION['time'] = time();
@@ -109,11 +161,25 @@ class SessionVars
         return $_SESSION['time'];
     }
     
+    
+    /*
+     * Get last read message id
+     * 
+     * @return string
+     */
     public function getLastMessageID()
     {
         return $_SESSION['lastMessageID'];
     }
     
+    
+    /*
+     * Set last read message id
+     * 
+     * @param mixed $lastMessageID
+     * 
+     * @return void
+     */
     public function setLastMessageID( $lastMessageID )
     {
         if( $lastMessageID !== -1)
@@ -122,11 +188,23 @@ class SessionVars
         }
     }
     
+    
+    /*
+     * Get time of login
+     * 
+     * @return int
+     */
     public function getLoginTime()
     {
         return $_SESSION['loginTime'];
     }
     
+    
+    /*
+     * Set login time
+     * 
+     * @return void
+     */
     protected function setLoginTime()
     {
         $_SESSION['loginTime'] = time();
