@@ -14,7 +14,7 @@ class SessionVars
     /*
      * @type bool
      * 
-     * Stores information if PHP session vars was initialized or not.
+     * Stores information if session vars was initialized or not.
      */
     static private $isInitialized = false;
     

@@ -4,21 +4,40 @@ namespace simpleChat\Utility;
 
 /**
  * Description of Viewer
+ * 
+ * Print html output
  *
  * @author mlin
  */
 class Viewer
 {
+    /*
+     * Print login form
+     * 
+     * @return void
+     */
     public function displayFormLogin()
     {
         $this->loadTemplate('login');
     }
     
+    /*
+     * Print html code for chat
+     * 
+     * @return void
+     */
     public function displayChat()
     {
         $this->loadTemplate('chat');
     }
     
+    /*
+     * Load and print specified template
+     * 
+     * @param string $template
+     * 
+     * @return void
+     */
     protected function loadTemplate($template)
     {
         $main = new Templater('main');

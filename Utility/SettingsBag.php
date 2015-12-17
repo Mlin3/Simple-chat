@@ -4,13 +4,24 @@ namespace simpleChat\Utility;
 
 /**
  * Description of SettingsBag
+ * 
+ * Provide easy access for settings
  *
  * @author mlin
  */
 class SettingsBag
 {
+    /*
+     * @type array
+     * 
+     * Stores settings in key => value format
+     */
     private $settings = array();
     
+    
+    /*
+     * Convert array of of SimpleXMLElement objects to array of strings values
+     */
     function __construct($settings)
     {
         foreach($settings as $setting)
@@ -19,6 +30,11 @@ class SettingsBag
         }
     }
     
+    /*
+     * Provide access for strored values as fields of object
+     * 
+     * @return string
+     */
     function __get($property)
     {
         if ( array_key_exists( ($key = strtolower( $property ) ), $this->settings ) )
