@@ -17,7 +17,12 @@ use simpleChat\Utility\Request;
  */
 abstract class ChatController
 {
+    /*
+     * @type string
+     */
     protected $path;
+    
+    
     /*
      * Return a right controller depending on the reqest type.
      * 
