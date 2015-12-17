@@ -7,10 +7,18 @@ use Exception;
 /**
  * Description of SessionLogin
  *
+ * Try to add new user to database
+ * 
  * @author mlin
  */
 class SessionLogin extends Session
 {
+    /*
+     * Add user to database or throw exception on error
+     * 
+     * @throws Exception
+     * @return Message
+     */
     public function login()
     {
         $request = new Request();
@@ -21,6 +29,9 @@ class SessionLogin extends Session
             {
                 $this->vars->setSession( $request->input('login') );
                 
+                //Try to add user to database, if nickname is already in use
+                //the exception will be thrown, PDOException can be thrown on
+                //error as well.
                 try
                 {
                     $this->db->addNewUser( $this->vars->getLogin(),
