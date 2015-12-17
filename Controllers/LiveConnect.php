@@ -18,7 +18,7 @@ class LiveConnect
 {
     /*
      * @type string
-     * Id of last messages read by user
+     * Id of last message read by user
      */
     protected $lastMessageID;
     

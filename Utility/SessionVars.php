@@ -14,13 +14,13 @@ class SessionVars
     /*
      * @type bool
      * 
-     * Stores information if session vars was initialized or not.
+     * Stores information if session vars were initialized or not.
      */
     static private $isInitialized = false;
     
     
     /*
-     * If session vars wasn't initialized it happens here. 
+     * If session vars weren't initialized it happens here. 
      * 
      * @return void
      */
