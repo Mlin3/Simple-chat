@@ -8,6 +8,13 @@ require __DIR__ . '/../Utility/autoloader.php';
 use simpleChat\Utility\Request;
 
 
+/**
+ * Description of ChatController
+ * 
+ * Returns instance of one of the child class.
+ * 
+ * @author mlin
+ */
 abstract class ChatController
 {
     protected $path;

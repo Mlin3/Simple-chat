@@ -5,8 +5,21 @@ namespace simpleChat\Controllers;
 use simpleChat\Utility\Session;
 use simpleChat\Utility\Viewer;
 
+
+/**
+ * Description of StandardController
+ * 
+ * Print html code
+ * 
+ * @author mlin
+ */
 class StandardController extends ChatController
 {
+    /*
+     * Print html code
+     * 
+     * @return void
+     */
     public function start()
     {
         $session = new Session();
@@ -19,7 +32,6 @@ class StandardController extends ChatController
         else
         {
             $viewer->displayFormLogin();
-            
         }
     }
 }

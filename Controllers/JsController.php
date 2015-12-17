@@ -10,10 +10,17 @@ use simpleChat\Utility\Templater;
 /**
  * Description of JsController
  *
+ * Print a javascript code.
+ * 
  * @author mlin
  */
 class JsController extends ChatController
 {
+    /*
+     * Print all javascript code to the output.
+     * 
+     * @return void
+     */
     public function start()
     {
         $templater = new JsTemplater('main');

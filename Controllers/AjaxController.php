@@ -12,14 +12,26 @@ use simpleChat\Utility\Message;
 
 /**
  * Description of AjaxController
- *
+ * 
+ * Control all incoming ajax request.
+ * 
  * @author mlin
  */
 class AjaxController extends ChatController
 {
+    /*
+     * @type SessionLogin
+     * 
+     * Stores SessionLogin instance.
+     */
     protected $session;
 
 
+    /*
+     * Control incoming ajax request and print response
+     * 
+     * @return void
+     */
     public function start()
     {
         $request = new Request();
@@ -67,6 +79,11 @@ class AjaxController extends ChatController
     }
     
     
+    /*
+     * Start new session, and print response.
+     * 
+     * @return void
+     */
     protected function login()
     {
         try
@@ -86,6 +103,11 @@ class AjaxController extends ChatController
     }
     
     
+    /*
+     * Destroy active session
+     * 
+     * @return Message
+     */
     protected function logout()
     {
         $logout = new \simpleChat\Utility\Logout();

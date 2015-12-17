@@ -10,13 +10,25 @@ use Exception;
 
 /**
  * Description of LiveConnect
- *
+ * Control request made by logged user.
+ * 
  * @author mlin
  */
 class LiveConnect
 {
+    /*
+     * @type string
+     * Id of last messages read by user
+     */
     protected $lastMessageID;
     
+    
+    /*
+     * Parse logged user request.
+     * 
+     * @throws Exception
+     * @return ChatMessage
+     */
     static public function controller()
     {
         $liveConnect = new self();
@@ -37,6 +49,12 @@ class LiveConnect
         }
     }
     
+    
+    /*
+     * Get unread messages and users list
+     * 
+     * @return ChatMessage
+     */
     public function mantainSession()
     {
         $session = new Session();
@@ -52,6 +70,12 @@ class LiveConnect
         return new ChatMessage(201, array($messages, $users) );
     }
     
+    
+    /*
+     * Add new message to database and invoke mantainSession method
+     * 
+     * @return ChatMessage
+     */
     public function addMessage()
     {
         $request = new Request();
@@ -65,6 +89,11 @@ class LiveConnect
         return $this->mantainSession();
     }
     
+    /*
+     * Get id of last message send to user
+     * 
+     * @return mixed
+     */
     protected function getLastMessageID( $messages )
     {
         if( count($messages) > 0 )

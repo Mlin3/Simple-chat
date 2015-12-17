@@ -12,7 +12,14 @@ namespace simpleChat\Utility;
  */
 class ChatMessage extends Message
 {
+    /*
+     * @type string
+     */
     public $messages;
+    
+    /*
+     * @type string
+     */
     public $users;
     
     /*
