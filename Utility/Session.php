@@ -30,7 +30,7 @@ class Session
      * @type bool
      * Inform if session data in database was updated
      */
-    static protected $updatedSession = false;
+    protected static $updatedSession = false;
             
     
     /*

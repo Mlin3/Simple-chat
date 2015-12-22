@@ -28,7 +28,7 @@ abstract class ChatController
      * 
      * @param string $path - Path to root folder
      */
-    static public function newInstance($path = \simpleChat\Utility\ROOT_PATH)
+    public static function newInstance($path = \simpleChat\Utility\ROOT_PATH)
     {
         $request = new Request();
         
@@ -48,7 +48,7 @@ abstract class ChatController
     }
     
     /*
-     * This function is supposed to form an answer to the request.
+     * This function is supposed to process the request and print response.
      */
     abstract public function start();
 }

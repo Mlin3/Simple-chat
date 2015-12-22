@@ -18,7 +18,7 @@ class Validator
      * 
      * @return bool
      */
-    static public function login($login)
+    public static function login($login)
     {
         if( preg_match('/^[a-z0-9_\-\(\)]{2,25}$/i', $login) )
         {

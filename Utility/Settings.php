@@ -27,11 +27,11 @@ class Settings
      * 
      * @return SettingsBag
      */
-    static function read($key)
+    public static function read($key)
     {
         $settings = new self();
         
-        $settings->loadSettings(VAR_PATH . 'settings.xml');
+        $settings->load(VAR_PATH . 'settings.xml');
         
         return new SettingsBag($settings->getArray($key));
     }
@@ -43,7 +43,7 @@ class Settings
      * @throws Exception
      * @return void
      */
-    public function loadSettings($path)
+    public function load($path)
     {
         if(file_exists($path))
         {

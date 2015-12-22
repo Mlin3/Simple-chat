@@ -22,7 +22,7 @@ class Viewer
     }
     
     /*
-     * Print html code for chat
+     * Print chat
      * 
      * @return void
      */

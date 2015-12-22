@@ -20,7 +20,7 @@ class Messenger
      * 
      * @return void
      */
-    static public function send($content, $type = '')
+    public static function send($content, $type = '')
     {
         $messenger = new self();
         

@@ -18,7 +18,7 @@ abstract class Database
      * Stores PDO instance in static variable so it will
      * be avaible for all instances of this and child classes
      */
-    static protected $handle = null;
+    protected static $handle = null;
     
     /*
      * If there is no connection, create one

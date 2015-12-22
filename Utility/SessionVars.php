@@ -16,7 +16,7 @@ class SessionVars
      * 
      * Stores information if session vars were initialized or not.
      */
-    static private $isInitialized = false;
+    private static $isInitialized = false;
     
     
     /*
@@ -24,7 +24,7 @@ class SessionVars
      * 
      * @return void
      */
-    static public function startSession()
+    public static function startSession()
     {
         if( !self::$isInitialized )
         {
