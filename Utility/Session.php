@@ -118,7 +118,7 @@ class Session
      * 
      * @return mixed - a result of invoked method
      */
-    function __call($name, $arguments)
+    public function __call($name, $arguments)
     {
         if( method_exists($this->vars, $name) )
         {
