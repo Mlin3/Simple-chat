@@ -3,6 +3,7 @@
 namespace simpleChat\Utility;
 
 use PDO;
+use Exception;
 
 
 /**
@@ -56,7 +57,7 @@ abstract class Database
             
         } catch (Exception $ex)
         {
-            throw new \Exception('Can\'t connect to database.');
+            throw new Exception('Can\'t connect to database.');
         }
     }  
     
