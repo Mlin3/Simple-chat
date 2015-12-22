@@ -28,7 +28,7 @@ class ChatMessage extends Message
      * messages and second containing list of logged users.
      * @param string $type
      */
-    function __construct($code, $content = array(), $type = 'chatLive')
+    public function __construct($code, $content = array(), $type = 'chatLive')
     {
         parent::__construct($code, '', $type);
         

@@ -18,7 +18,7 @@ class JsTemplater extends Templater
      * @param string @template - name of a file
      * @param string @extension - alternatively extension of this file
      */
-    function __construct($template = '', $extension = '.js')
+    public function __construct($template = '', $extension = '.js')
     {
         $this->extension = $extension;
         

@@ -34,7 +34,7 @@ class Templater
     /*
      * Set extenstion and load template if specified
      */
-    function __construct($template = '', $extension = '.html')
+    public function __construct($template = '', $extension = '.html')
     {
         $this->extension = $extension;
         

@@ -60,7 +60,7 @@ class SessionVars
     }
     
     
-    function __construct()
+    public function __construct()
     {    
         self::startSession();
     }

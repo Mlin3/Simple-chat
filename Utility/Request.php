@@ -47,7 +47,7 @@ class Request
     /*
      * Parse uri and set POST variables
      */
-    function __construct()
+    public function __construct()
     {
         $this->loadUri();
         $this->setRequestVariables();

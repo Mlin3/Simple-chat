@@ -22,7 +22,7 @@ class SettingsBag
     /*
      * Convert array of of SimpleXMLElement objects to array of strings values
      */
-    function __construct($settings)
+    public function __construct($settings)
     {
         foreach($settings as $setting)
         {
@@ -35,7 +35,7 @@ class SettingsBag
      * 
      * @return string
      */
-    function __get($property)
+    public function __get($property)
     {
         if ( array_key_exists( ($key = strtolower( $property ) ), $this->settings ) )
         {

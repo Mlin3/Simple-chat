@@ -37,7 +37,7 @@ class Session
      * Create new instances of required classes and if it wasn't done before,
      * update data in database
      */
-    function __construct()
+    public function __construct()
     {
         $this->db = new Login();
         $this->vars = new SessionVars();

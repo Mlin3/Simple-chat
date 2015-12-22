@@ -34,7 +34,7 @@ class Message
      * @param mixed $content
      * @param string $type
      */
-    function __construct($code, $content = '', $type = 'basic')
+    public function __construct($code, $content = '', $type = 'basic')
     {
         $this->set($code, $content, $type);
     }

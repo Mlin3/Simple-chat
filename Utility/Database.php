@@ -23,7 +23,7 @@ abstract class Database
     /*
      * If there is no connection, create one
      */
-    function __construct()
+    public function __construct()
     {
         if( self::$handle === null)
         {
