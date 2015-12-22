@@ -23,7 +23,7 @@ abstract class Database
     /*
      * If there is no connection, create one
      */
-    public function __construct()
+    final public function __construct()
     {
         if( self::$handle === null)
         {
@@ -37,7 +37,7 @@ abstract class Database
      * 
      * @return void
      */
-    public function connect()
+    final public function connect()
     { 
         $settings = Settings::read('database');
             
